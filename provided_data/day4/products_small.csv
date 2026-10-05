@@ -1,0 +1,16 @@
+product_id,product_name,category,brand,cost_price,list_price
+1,Electronics Product 01,Electronics,BrandB,235,364.25
+2,Electronics Product 02,Electronics,BrandC,290,449.5
+3,Electronics Product 03,Electronics,BrandD,345,534.75
+4,Home Product 04,Home,BrandA,400,620.0
+5,Home Product 05,Home,BrandB,455,705.25
+6,Home Product 06,Home,BrandC,510,790.5
+7,Sports Product 07,Sports,BrandD,565,875.75
+8,Sports Product 08,Sports,BrandA,620,961.0
+9,Sports Product 09,Sports,BrandB,675,1046.25
+10,Books Product 10,Books,BrandC,730,1131.5
+11,Books Product 11,Books,BrandD,785,1216.75
+12,Books Product 12,Books,BrandA,840,1302.0
+13,Fashion Product 13,Fashion,BrandB,895,1387.25
+14,Fashion Product 14,Fashion,BrandC,950,1472.5
+15,Fashion Product 15,Fashion,BrandD,1005,1557.75

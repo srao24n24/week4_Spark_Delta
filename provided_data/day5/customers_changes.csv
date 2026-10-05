@@ -1,0 +1,5 @@
+customer_id,customer_name,email,city,state,signup_date,segment,source_system
+3,Customer 03,c03.new@example.com,Coimbatore,Tamil Nadu,2025-10-13,Premium,CRM
+7,Customer 07,customer07@example.com,Mysuru,Karnataka,2025-10-29,Corporate,CRM
+13,Customer 13,customer13@example.com,Chennai,Tamil Nadu,2026-01-15,Standard,CRM
+14,Customer 14,customer14@example.com,Kochi,Kerala,2026-01-16,Premium,CRM

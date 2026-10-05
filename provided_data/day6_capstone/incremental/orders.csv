@@ -1,0 +1,17 @@
+order_id,customer_id,order_date,order_status,sales_channel
+1046,3,2026-04-01,Completed,Web
+1047,10,2026-04-03,Completed,Store
+1048,17,2026-04-05,Completed,Mobile
+1049,4,2026-04-07,Shipped,Web
+1050,11,2026-04-09,Cancelled,Store
+1051,18,2026-04-11,Completed,Mobile
+1052,5,2026-04-13,Completed,Web
+1053,12,2026-04-15,Completed,Store
+1054,19,2026-04-17,Shipped,Mobile
+1055,6,2026-04-19,Cancelled,Web
+1056,13,2026-04-21,Completed,Store
+1057,20,2026-04-23,Completed,Mobile
+1058,7,2026-04-25,Completed,Web
+1059,14,2026-04-27,Shipped,Store
+1060,1,2026-04-29,Cancelled,Mobile
+1011,18,2026-01-21,Completed,Mobile

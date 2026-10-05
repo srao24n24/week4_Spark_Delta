@@ -1,0 +1,191 @@
+{
+  "package": "Week4_Spark_Delta_Candidate_Package",
+  "file_count": 37,
+  "files": [
+    {
+      "path": "READING_LINKS.md",
+      "bytes": 1014,
+      "sha256": "71e29c7efbd1c7cc2e5e98614e5c4a4945f75f4a6ebb5bb38b021beb93e6a143"
+    },
+    {
+      "path": "README_FIRST.md",
+      "bytes": 832,
+      "sha256": "d1f3cd16fb90a02c8c8dab43730afcfeb251bc672d6a2812eae5317c2cf556e1"
+    },
+    {
+      "path": "Week4_Spark_Delta_Candidate_Labs.docx",
+      "bytes": 45182,
+      "sha256": "85593d727d05dff977b4b35c3636669be2aedda1633f3e0d06be503d42d87f43"
+    },
+    {
+      "path": "provided_data/day1/order_items_sample.csv",
+      "bytes": 826,
+      "sha256": "832a64a3d6850c27811c7b73b01371bfa9a1db07ed2b845ac06622e2aeeddd9a"
+    },
+    {
+      "path": "provided_data/day1/orders_sample.csv",
+      "bytes": 734,
+      "sha256": "d6dfb5debcfd954e83901276191aadd85e66a65d40b96da1aa77e1be35ef8574"
+    },
+    {
+      "path": "provided_data/day2/customers_raw.csv",
+      "bytes": 1633,
+      "sha256": "eb0fce14e3b5825bba704529522618049d16e341962fb0b5bfff207dc54e0b88"
+    },
+    {
+      "path": "provided_data/day2/order_items_raw.csv",
+      "bytes": 2735,
+      "sha256": "efe6954e52a4e9d57471d7569b17246874200ce8ba477265eb9b8b3819739b0f"
+    },
+    {
+      "path": "provided_data/day2/orders_raw.csv",
+      "bytes": 2121,
+      "sha256": "d701858bd079bcf63d7b64795544d1bfd4e4503a0974d80b3df68612ed75a377"
+    },
+    {
+      "path": "provided_data/day2/products_raw.csv",
+      "bytes": 761,
+      "sha256": "efc36fdb47578a8c2f0c63300f589567a5e5266a5fea036e033a0cb19ed10005"
+    },
+    {
+      "path": "provided_data/day3/customers.csv",
+      "bytes": 1570,
+      "sha256": "1c33b3660bd40f341981f839274ba5f84efed6a0660f9f00f5c813c1625b0b13"
+    },
+    {
+      "path": "provided_data/day3/order_items.csv",
+      "bytes": 2711,
+      "sha256": "5a38f97d39d5ccccb788fbf546ed95f269833df059e4784208c5783f3e4fc456"
+    },
+    {
+      "path": "provided_data/day3/orders.csv",
+      "bytes": 2088,
+      "sha256": "5522f6264d4d7079756c9ec7c006b46572d73000754cb07f184e9dca748c481c"
+    },
+    {
+      "path": "provided_data/day3/products.csv",
+      "bytes": 761,
+      "sha256": "efc36fdb47578a8c2f0c63300f589567a5e5266a5fea036e033a0cb19ed10005"
+    },
+    {
+      "path": "provided_data/day4/order_items_50k.csv",
+      "bytes": 2104962,
+      "sha256": "7811c8b5bd1888654ab12b563ef9be11f1940868339f0b19ec9ad725d22a32df"
+    },
+    {
+      "path": "provided_data/day4/products_small.csv",
+      "bytes": 761,
+      "sha256": "efc36fdb47578a8c2f0c63300f589567a5e5266a5fea036e033a0cb19ed10005"
+    },
+    {
+      "path": "provided_data/day5/customers_changes.csv",
+      "bytes": 390,
+      "sha256": "6a5cd44fbd4c884ae4a18c2b8097e76390c8fc56d7a28df47720dbb44aa0ac41"
+    },
+    {
+      "path": "provided_data/day5/customers_initial.csv",
+      "bytes": 967,
+      "sha256": "06dece5586bb0080fbb7127aae376b15a2f5024528c92f7f3256d959e8a8cad1"
+    },
+    {
+      "path": "provided_data/day6_capstone/incremental/customers.csv",
+      "bytes": 1570,
+      "sha256": "1c33b3660bd40f341981f839274ba5f84efed6a0660f9f00f5c813c1625b0b13"
+    },
+    {
+      "path": "provided_data/day6_capstone/incremental/order_items.csv",
+      "bytes": 767,
+      "sha256": "311ada76979a7cab044863df2561ce0fccef04c82e0c807876cecb590591bf0a"
+    },
+    {
+      "path": "provided_data/day6_capstone/incremental/orders.csv",
+      "bytes": 603,
+      "sha256": "106c2c7239b8e13914e9ff4fb266190d028a4ea7e5f8f0d8e1204b63ce681cfe"
+    },
+    {
+      "path": "provided_data/day6_capstone/incremental/products.csv",
+      "bytes": 761,
+      "sha256": "efc36fdb47578a8c2f0c63300f589567a5e5266a5fea036e033a0cb19ed10005"
+    },
+    {
+      "path": "provided_data/day6_capstone/initial/customers.csv",
+      "bytes": 1570,
+      "sha256": "1c33b3660bd40f341981f839274ba5f84efed6a0660f9f00f5c813c1625b0b13"
+    },
+    {
+      "path": "provided_data/day6_capstone/initial/order_items.csv",
+      "bytes": 2032,
+      "sha256": "e9654e645bf479b59d1f6072487ff877530857d06a04bb0789c09cbaa713f7fd"
+    },
+    {
+      "path": "provided_data/day6_capstone/initial/orders.csv",
+      "bytes": 1580,
+      "sha256": "6aaa777ac9653fc070ab020561bf6fbc9be26ea5d68a0b9f718f612474e6b41a"
+    },
+    {
+      "path": "provided_data/day6_capstone/initial/products.csv",
+      "bytes": 761,
+      "sha256": "efc36fdb47578a8c2f0c63300f589567a5e5266a5fea036e033a0cb19ed10005"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 34,
+      "sha256": "26ce3178acaf9cb910845dec17d5cba0efe7c444298cb61f2e84550fd22c7734"
+    },
+    {
+      "path": "starter/day1_dataframe_foundations.py",
+      "bytes": 912,
+      "sha256": "794c3d2d2d5b6491689c4cf6947a58297b1a329c75f2b75e6fa6aaa062dc7765"
+    },
+    {
+      "path": "starter/day2_cleaning.py",
+      "bytes": 656,
+      "sha256": "0bda1599dd3d191ab840ce2a1b85b56381da7e96fa7916c272f922bf35951c5a"
+    },
+    {
+      "path": "starter/day3_analytics.py",
+      "bytes": 675,
+      "sha256": "88f84d9e35cd6f9a0bac5f54facbc08921376899dcd18fd68f93fdff9e14534f"
+    },
+    {
+      "path": "starter/day4_performance.py",
+      "bytes": 780,
+      "sha256": "7b84580198d15fdcf65f86b6fbf79bf1d628b8fe42611128fcc44ff873e0cbc0"
+    },
+    {
+      "path": "starter/day5_delta.py",
+      "bytes": 733,
+      "sha256": "7448c117ede8a0195adf13ca11b16b1dc7173712e3b19a25197c59df675d7787"
+    },
+    {
+      "path": "starter/day6_medallion_pipeline.py",
+      "bytes": 1193,
+      "sha256": "70f3a67e65bd44d437c3327caafdc89bb205f12346723092e46e929bd5939f66"
+    },
+    {
+      "path": "starter/spark_utils.py",
+      "bytes": 829,
+      "sha256": "6401b9ef854b3d38ffe28626dc9e947ec78036c8ff10ce6bfb659978fa3a62c9"
+    },
+    {
+      "path": "templates/capstone_submission_checklist.md",
+      "bytes": 487,
+      "sha256": "48d047e58482b485e081743cf3b4df7c89cb199c616d60d7721c9da3c1b6ffae"
+    },
+    {
+      "path": "templates/evidence_log.md",
+      "bytes": 247,
+      "sha256": "d3e00141b0d2ef4cae98c80fd3db97bb9c769341cfcc1bfe89fd29ead0bc0e68"
+    },
+    {
+      "path": "templates/performance_observations.md",
+      "bytes": 225,
+      "sha256": "0bc3f6d96e554ca65edb0b89fb3c4a00224a7637fdabd3fecb305486061718e0"
+    },
+    {
+      "path": "verify_setup.py",
+      "bytes": 242,
+      "sha256": "4a361255095eb10afc194361aac120d2c33db474385dc08985b50851b757881a"
+    }
+  ]
+}
