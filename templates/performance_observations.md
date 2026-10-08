@@ -1,7 +1,7 @@
 # Performance observations
 | Experiment | Plan before | Change | Plan after | Evidence | Cluster caveat |
 |---|---|---|---|---|---|
-| Partitions | | | | | |
-| Broadcast join | | | | | |
-| Cache | | | | | |
-| Skew | | | | | |
+| Partitions | Input had 1 partition. | Compared repartition(8) and coalesce(2). | repartition(8) produced 8 partitions and coalesce(2) stayed at 1 partition. | Console output was Input = 1, repartition(8) = 8, coalesce(2) = 1. | Tested in local on a small CSV file, so this does not prove performance. |
+| Broadcast join | Normal join used SortMergeJoin with Exchange on both tables, followed by Sort. | Used broadcast(products). | Join changed to BroadcastHashJoin. The small products table used BroadcastExchange, while facts had no Exchange. | Physical plans show SortMergeJoin before and BroadcastHashJoin after. | Local mode and small data do not prove that broadcasting will always be faster on a cluster. Broadcasting a large table can also use too much executor memory. |
+| Cache | category_agg was not cached. | Persisted category_agg with StorageLevel MEMORY_AND_DISK, materialized it with count(), reused it twice, then called unpersist(). | is_cached changed to True after persist and stayed True after count(). It became False after unpersist(). | Console evidence is Before persist = False, after persist = True, after count() = True, after unpersist() = False. | Tested in local mode, so actual cache performance can differ on a cluster. |
+| Skew | No skew mitigation was applied. | Grouped facts by product_id and calculated row counts and percentages. | Identified product_id = 1 as the hottest key with 20,000 rows, or 40% of all 50,000 rows. | Skew table shows product 1 has 20,000 rows while the other products have about 2,000–2,200 rows each. | The data is small and was tested in local mode, so this demonstrates the skew pattern but does not prove a specific cluster performance impact. |
