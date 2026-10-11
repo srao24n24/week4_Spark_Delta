@@ -1,0 +1,50 @@
+# Day 6: End-to-End Medallion Capstone
+
+## Overview
+
+This project uses PySpark and Delta Lake to build a Bronze, Silver, and Gold data pipeline in Microsoft Fabric. It processes customers, products, orders, and order items from initial and incremental CSV batches.
+
+## Pipeline Stages
+
+- **Bronze:** Reads the four CSV files using explicit schemas and adds `ingested_at`, `source_file`, and `batch_id`.
+- **Silver:** Cleans and validates data, removes duplicate business keys, checks relationships between tables, saves rejected records, and uses Delta MERGE to update or insert records.
+- **Gold:** Creates `gold_sales_detail` and `gold_monthly_category`, calculates sales and profit, and excludes cancelled orders.
+
+## Run Order
+
+1. Attach the Lakehouse containing the input files.
+2. Run the notebook cells in order to define the pipeline functions.
+3. Run the final cell to execute the initial batch, incremental batch, and repeated incremental batch.
+4. Review the Gold totals and reconciliation report.
+
+## Assumptions
+
+- Customer, product, order, and order item IDs are the business keys.
+- Invalid records are rejected and saved with a rejection reason.
+- Orders must reference valid customers, and order items must reference valid orders and products.
+- Cancelled orders are excluded from Gold sales calculations.
+- Reprocessing the same incremental batch should not change the final Gold results.
+
+## Reconciliation and Expected Results
+
+| Metric | Expected |
+|---|---:|
+| Silver customers | 20 |
+| Silver products | 15 |
+| Silver orders | 60 |
+| Silver order items | 120 |
+| Gold sales detail rows | 96 |
+| Gold net sales | 220,619.25 |
+| Gold profit | 62,469.25 |
+
+The reconciliation report checks duplicate keys, missing required values, invalid relationships, row counts, and financial totals. It is saved under `Files/work/day6/evidence/reconciliation/`.
+
+The repeated incremental run should leave the Gold keys, row count, and financial totals unchanged.
+
+## Performance Decision
+
+I used explicit schemas instead of inferring data types from CSV files. I also selected only the required columns before joining tables, reducing the amount of data processed during joins.
+
+## Conclusion
+
+This project demonstrates incremental data processing, data quality checks, Delta MERGE operations, Gold analytics, and reconciliation across a medallion architecture.
