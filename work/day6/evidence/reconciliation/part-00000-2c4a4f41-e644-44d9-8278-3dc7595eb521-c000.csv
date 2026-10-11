@@ -1,0 +1,44 @@
+check,actual,expected,status
+customers: bronze / silver / rejected rows,60 / 20 / 0,-,INFO
+customers: bronze distinct keys = silver rows + rejected keys,20,20,PASS
+customers: duplicate customer_id in silver,0,0,PASS
+customers: null customer_id in silver,0,0,PASS
+customers: null customer_name in silver,0,0,PASS
+customers: null email in silver,0,0,PASS
+customers: null signup_date in silver,0,0,PASS
+products: bronze / silver / rejected rows,45 / 15 / 0,-,INFO
+products: bronze distinct keys = silver rows + rejected keys,15,15,PASS
+products: duplicate product_id in silver,0,0,PASS
+products: null product_id in silver,0,0,PASS
+products: null product_name in silver,0,0,PASS
+products: null category in silver,0,0,PASS
+products: null cost_price in silver,0,0,PASS
+products: null list_price in silver,0,0,PASS
+orders: bronze / silver / rejected rows,77 / 60 / 0,-,INFO
+orders: bronze distinct keys = silver rows + rejected keys,60,60,PASS
+orders: duplicate order_id in silver,0,0,PASS
+orders: null order_id in silver,0,0,PASS
+orders: null customer_id in silver,0,0,PASS
+orders: null order_date in silver,0,0,PASS
+orders: null order_status in silver,0,0,PASS
+orders: null sales_channel in silver,0,0,PASS
+order_items: bronze / silver / rejected rows,152 / 120 / 0,-,INFO
+order_items: bronze distinct keys = silver rows + rejected keys,120,120,PASS
+order_items: duplicate order_item_id in silver,0,0,PASS
+order_items: null order_item_id in silver,0,0,PASS
+order_items: null order_id in silver,0,0,PASS
+order_items: null product_id in silver,0,0,PASS
+order_items: null quantity in silver,0,0,PASS
+order_items: null unit_price in silver,0,0,PASS
+order_items: null discount_pct in silver,0,0,PASS
+orders without a customer,0,0,PASS
+order_items without an order,0,0,PASS
+order_items without a product,0,0,PASS
+gold_sales_detail: Cancelled rows,0,0,PASS
+gold_sales_detail rows = silver items in non-cancelled orders,96,96,PASS
+gold_sales_detail total gross = silver recalculation,245132.5000,245132.5000,PASS
+gold_monthly_category total gross = gold_sales_detail total,245132.5000,245132.5000,PASS
+gold_sales_detail total net = silver recalculation,220619.2500,220619.2500,PASS
+gold_monthly_category total net = gold_sales_detail total,220619.2500,220619.2500,PASS
+gold_sales_detail total profit = silver recalculation,62469.2500,62469.2500,PASS
+gold_monthly_category total profit = gold_sales_detail total,62469.2500,62469.2500,PASS
